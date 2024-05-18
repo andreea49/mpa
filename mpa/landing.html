@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #f0f0f0;
+            color: black;
+            padding: 15px 0;
+        }
+        main {
+            padding: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+        nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 30px;
+            overflow: hidden;
+            background-color: #f0f0f0;
+            color: black;
+        }
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            height: auto;
+            width: auto;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        button1 {
+            background-color: black;
+            color: white;
+            height: auto;
+            width: auto;
+            padding: 8px;
+            border-radius: 10px;
+        }
+        div.a {
+            position: relative;
+            width: 70%;
+            height: 300px;
+            /* border: 3px solid red; */
+            left : 20%;
+            margin-top: auto;
+        }
+
+        div.b {
+            position: absolute;
+            left: auto;
+            width: 35%;
+            height: 300px;
+            /* border: 3px solid blue; */
+            text-align: left;
+        } 
+
+        div.c {
+            position: absolute;
+            left: 50%;
+            width: 35%;
+            height: 300px;
+            /* border: 3px solid green; */
+            text-align: left;
+        } 
+
+    </style>
+</head>
+<body>
+    <nav>
+        <li><a href="#App">App</a></li>
+        <li style="float:right"><a  href="#LogOut"><button1>Log out</button1></a></li>
+        <li style="float:right"><a href="#Program">Program</a></li>
+        <li style="float:right"><a href="#ContactUs">Contact us</a></li>
+        <li style="float:right"><a href="#Pricing">Pricing</a></li>
+    </nav>
+    <header>
+        <h1>App</h1>
+        <br>
+        <p>A subscription based meal kit and fitness plan</p>
+        <button>Let's get started! </button>
+    </header>
+    <main>
+        <br>
+        <div class = "a">
+            <div class = "b">
+                <h2>Introduction</h2>
+                <p> Embark on a journey towards a healthier lifestyle with our innovative fitness program and meal kit delivery service! At [App], we understand that everyone's fitness journey is unique, which is why we've developed a personalized approach to help you achieve your health and wellness goals. </p>
+            </div>
+            <div class = "c">
+                <img src="https://www.vitalhealthnutrition.co.uk/wp-content/uploads/2020/01/Canva-healthy-food-healthy-lifestyle-concept-with-exercise-weights-1080x675.jpg" width = "100%" height="100%">
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class = "a">
+            <div class = "b">
+                <img src="https://parade.com/.image/t_share/MTkwNTgxMjkxNjk3NTc5OTAw/istock-1203599963-jpg.jpg" width = "100%" height="100%">
+            </div>
+            <div class = "c">
+                <h2>The Quiz</h2>
+                <p> Step into our world by taking our specially crafted quiz, designed to understand your fitness level, dietary preferences, and lifestyle habits. This interactive questionnaire serves as the foundation for crafting a tailored fitness program that's perfectly suited to your individual needs and aspirations. Whether you're aiming to build strength, improve endurance, or enhance overall well-being, our quiz ensures that your program is custom-fit to align with your objectives. </p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class = "a">
+            <div class = "b">
+                <h2>Delivery</h2>
+                <p>But wait, there's more! To complement your fitness journey, we offer a convenient meal kit delivery service that brings wholesome and delicious meals straight to your doorstep. From energizing breakfast options to satisfying lunches and nutritious dinners, each meal is carefully crafted to fuel your body with the essential nutrients it needs to thrive. Our partnerships with local restaurants ensure a diverse selection of culinary delights that cater to various dietary preferences and taste preferences.</p>
+            </div>
+            <div class = "c">
+                <img src="https://www.vitalhealthnutrition.co.uk/wp-content/uploads/2020/01/Canva-healthy-food-healthy-lifestyle-concept-with-exercise-weights-1080x675.jpg" width = "100%" height="100%">
+            </div>
+    </main>
+    <footer>
+        <p>&copy; *name*</p>
+    </footer>
+</body>
+</html>
