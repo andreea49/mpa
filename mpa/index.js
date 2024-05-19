@@ -6,7 +6,22 @@ const hostname = '127.0.0.1';
 const port = 3000;
 
 const server = http.createServer((req, res) => {
-    const filePath = path.join(__dirname, 'landing.html');
+    let filePath = '';
+    let contentType = 'text/html';
+
+    if (req.url === '/') {
+        filePath = path.join(__dirname, 'landing.html');
+    } else if (req.url === '/bussiness') {
+        filePath = path.join(__dirname, 'bussiness.html');
+    } else if (req.url === '/pitch') {
+        filePath = path.join(__dirname, 'pitch.html');
+    } else {
+        res.statusCode = 404;
+        res.setHeader('Content-Type', 'text/plain');
+        res.end('Page not found');
+        return;
+    }
+
     fs.readFile(filePath, (err, data) => {
         if (err) {
             res.statusCode = 500;
@@ -15,7 +30,7 @@ const server = http.createServer((req, res) => {
             return;
         }
         res.statusCode = 200;
-        res.setHeader('Content-Type', 'text/html');
+        res.setHeader('Content-Type', contentType);
         res.end(data);
     });
 });
